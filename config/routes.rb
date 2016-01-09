@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root "pages#show", page: "home"
+  root "pages#show", page: "about"
 
   get "/pages/:page" => "pages#show"
 
