@@ -14,8 +14,13 @@ $lt-gray: #F0F0F0;
 }
 
 .right-side-content {
+  padding-top: 50px;
   height: 100%;
   background-color: $lt-gray;
+}
+
+.intro ul li {
+  list-style: none;
 }
 
 nav {
