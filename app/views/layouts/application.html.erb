@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Carl Venezia</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<%= yield %>
+    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
-</body>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    
+    <div class="left-side-nav small-2 columns">
+      <div class="row">
+        <nav>
+          <ul>
+            <li>
+              <%= link_to 'about', '#' %>
+            </li>
+            <li>
+              <%= link_to 'projects', '#' %>
+            </li>
+            <li>
+              <%= link_to 'thoughts', '#' %>
+            </li>
+            <li>
+              <%= link_to 'contact', '#' %>
+            </li>
+            <li>
+              <%= image_tag 'cutmypic.png' %>
+              <label>Crafted by Carl Venezia</label>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <%= yield %>
+
+  </body>
 </html>

@@ -1,0 +1,36 @@
+$dark-blue: #032853;
+$gray: #374140;
+$med-green: #207360;
+$tan: #EEE9D6;
+$red: #DC3522;
+$lt-blue: #1695A3;
+$secondary-lt-blue: #C3DFEB;
+$lt-gray: #F0F0F0;
+
+
+.left-side-nav {
+  background-color: $dark-blue;
+  height: 100%;
+}
+
+.right-side-content {
+  height: 100%;
+  background-color: $lt-gray;
+}
+
+nav {
+  text-align: center;
+  ul {
+    list-style: none;
+    li {
+      padding-top: 50px;
+    }
+  }
+  label {
+    padding-top: 50px;
+    color: $tan;
+  }
+  a {
+    color: $tan;
+  }
+}
